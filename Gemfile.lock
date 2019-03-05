@@ -10,6 +10,7 @@ PATH
   specs:
     ff-tbl-macros (0.0.4)
       activesupport
+      firefield_event_store
       require_all
       trailblazer
 
@@ -179,7 +180,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   ff-tbl-macros!
-  firefield_event_store (= 0.1.5)!
+  firefield_event_store!
   rspec
   simplecov
 

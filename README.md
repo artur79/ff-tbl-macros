@@ -4,7 +4,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ff-tbl-macros'
+gem 'ff-tbl-macros', git: 'https://github.com/artur79/ff-tbl-macros.git'
 ```
 
 ## Example Usage
