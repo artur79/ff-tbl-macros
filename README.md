@@ -4,7 +4,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ff-tbl-macros', git: 'https://github.com/firefield/ff-tbl-macros.git'
+gem 'ff-tbl-macros', git: 'https://github.com/artur79/ff-tbl-macros.git'
 ```
 
 ## Example Usage
@@ -54,8 +54,8 @@ end
 bundle exec rspec
 ```
 
-## Credits
-This gem is based on https://github.com/coditsu/macros
+### Credits
+Gem used https://github.com/coditsu/macros as the base.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
