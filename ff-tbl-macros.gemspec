@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
   spec.authors       = ['Artur Szwed, Claudio Perez Gamayo']
   spec.email         = %w[devops@firefield.com]
-  spec.files         = ['lib/ff_tbl_macros.rb']
+  spec.files         = ['lib/macros.rb']
   spec.homepage      = 'http://firefield.com'
   spec.summary       = 'Trailblazer shared macros for Firefield apps'
   spec.description   = 'Trailblazer shared macros for Firefield apps'
