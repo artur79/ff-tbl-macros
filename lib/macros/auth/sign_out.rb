@@ -2,7 +2,7 @@
 
 module Macros
   class Auth
-    # Signout the given user. The user can be passed in the context.
+    # Sign out the given user. The user can be passed in the context.
     #
     # @example signout a user specified in the context (:scope or :model)
     #   step Macros::Auth::SignOut()
