@@ -2,7 +2,7 @@
 
 module Macros
   class Contract < Macros::Base
-    register :hue
+    register :extract_params
     register :prepopulate
   end
 end

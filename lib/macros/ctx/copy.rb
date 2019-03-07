@@ -9,7 +9,8 @@ module Macros
       end
 
       def call(ctx, **)
-        return false if ctx[@origin_key].blank?
+        return false unless ctx[@origin_key]
+
         ctx[@destination_key] = ctx[@origin_key]
       end
     end

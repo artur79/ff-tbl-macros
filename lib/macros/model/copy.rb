@@ -8,7 +8,8 @@ module Macros
       end
 
       def call(ctx, **)
-        return false if ctx[@ctx_key].blank?
+        return false unless ctx[@ctx_key]
+
         ctx[:model] = ctx[@ctx_key]
       end
     end

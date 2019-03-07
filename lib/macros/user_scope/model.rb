@@ -3,7 +3,7 @@
 module Macros
   class UserScope
     class Model < Macros::Base
-      # @return [Macro::UserScope::Model] step macro instance
+      # @return [Macros::UserScope::Model] step macro instance
       # @param condition [Hash] attribute the model should respond to as the condition to be set.
       # @example model should respond to :last_sign_in_at
       #   Macros::User::Scope(condition: :last_sign_in_at)

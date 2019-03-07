@@ -22,7 +22,6 @@ module Macros
         else
           p ctx
         end
-        true
       end
     end
   end

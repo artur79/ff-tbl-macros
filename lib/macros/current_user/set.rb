@@ -10,14 +10,14 @@ module Macros
       # @return [Macro::CurrentUser::Set] step macro instance
       def initialize(key: :model)
         @key = key
-        @user_class = User
       end
 
       # Sets the current user in the context
       # @param ctx [Trailblazer::Skill] tbl context hash
       def call(ctx, **)
-        return false if ctx[@key].blank?
-        return false unless VALID_CURRENT_USER_CLASS_NAMES.include? ctx[@key].class.name
+        return false unless ctx[@key]
+        return false unless VALID_CURRENT_USER_CLASS_NAMES.include? ctx[@key].class.name.demodulize
+
         ctx[:current_user] = ctx[@key]
       end
     end

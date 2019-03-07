@@ -2,8 +2,6 @@
 
 module Macros
   class UserScope < Macros::Base
-    register :extract_contract_params
     register :model
-    register :validate
   end
 end

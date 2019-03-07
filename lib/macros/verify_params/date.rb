@@ -7,8 +7,10 @@ module Macros
         @params_key = params_key
       end
 
-      def call(ctx, params:, **)
-        params[@params_key].class == ::Date
+      def call(ctx, **) # TODO for some reason using params: here makes specs to return missing keyword: params
+        return false unless ctx[:params]
+
+        ctx[:params][@params_key].class == ::Date
       end
     end
   end
