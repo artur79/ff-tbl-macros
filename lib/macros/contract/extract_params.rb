@@ -7,17 +7,17 @@ module Macros
       # @param key [Symbol] key in params default is scope
       # @example scope not passed
       #   Macros::Contract::ExtractParams()
-      # @example scope passed
-      #   Macros::Contract::ExtractParams(scope: :admin)
 
-      def initialize(scope: :user)
-        @scope = scope
+      def initialize(scope_key: :scope)
+        @scope_key = scope_key
       end
 
       def call(ctx, **)
         return false unless ctx[:params]
+        scope = ctx[@scope_key]
+        return false unless scope
 
-        ctx['contract.default.params'] = ctx[:params][@scope]
+        ctx['contract.default.params'] = ctx[:params][scope]
       end
     end
   end
