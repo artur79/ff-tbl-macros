@@ -7,7 +7,7 @@ module Macros
       #
       # @example searchable is optional
       #   Macros::Search::Query(searchable: Admin)
-      def initialize(searchable: nil)
+      def initialize(searchable:)
         @searchable = searchable
       end
 
@@ -19,7 +19,8 @@ module Macros
       # The orders is passed in ctx[:order] and looks like this:
       # `{created_at: :desc}`
       def call(ctx, params:, order: nil, **)
-        return false if @searchable.blank?
+        return false unless @searchable
+
         ctx[:searchable] = @searchable
         query = @searchable.ransack params[:q]
         ctx[:query] = query

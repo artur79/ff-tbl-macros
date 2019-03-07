@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ff-tbl-macros (0.0.8)
+    ff-tbl-macros (0.1.0)
       activesupport
       require_all
       trailblazer
@@ -32,6 +32,7 @@ GEM
     json (2.2.0)
     minitest (5.11.3)
     pipetree (0.1.1)
+    recursive-open-struct (1.1.0)
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
@@ -77,6 +78,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   ff-tbl-macros!
+  recursive-open-struct
   rspec
   simplecov
 
