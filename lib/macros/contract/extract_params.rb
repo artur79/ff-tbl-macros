@@ -5,19 +5,19 @@ module Macros
     class ExtractParams < Macros::Base
       # @return [Macros::Contract::ExtractParams] step macro instance
       # @param key [Symbol] key in params default is scope
-      # @example key not passed
+      # @example scope not passed
       #   Macros::Contract::ExtractParams()
-      # @example key passed
-      #   Macros::Contract::ExtractParams(:admin)
+      # @example scope passed
+      #   Macros::Contract::ExtractParams(scope: :admin)
 
-      def initialize(key = :scope)
-        @key = key
+      def initialize(scope: :user)
+        @scope = scope
       end
 
       def call(ctx, **)
         return false unless ctx[:params]
 
-        ctx['contract.default.params'] = ctx[:params][@key]
+        ctx['contract.default.params'] = ctx[:params][@scope]
       end
     end
   end
