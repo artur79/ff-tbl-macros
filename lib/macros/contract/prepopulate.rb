@@ -9,7 +9,6 @@ module Macros
 
       def call(ctx, **)
         options = ctx[@options_key] || {}
-
         ctx['contract.default'].prepopulate!(options)
       end
     end
