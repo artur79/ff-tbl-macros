@@ -6,6 +6,8 @@ gemspec
 
 group :development, :test do
   gem 'rspec'
+  gem 'rspec-activemodel-mocks'
   gem 'simplecov'
   gem 'recursive-open-struct'
+  gem 'warden'
 end
