@@ -10,7 +10,7 @@ module Macros
       # @param _ctx [Trailblazer::Skill] context accumulator
       # @param model [Object] object that we want to destroy
       def call(ctx, model:, **)
-        ctx[:model] = nil if model.destroy
+        model.destroy
         model.destroyed?
       end
     end

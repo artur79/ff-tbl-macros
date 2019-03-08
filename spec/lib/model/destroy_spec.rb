@@ -8,6 +8,6 @@ RSpec.describe Macros::Model::Destroy do
 
   it 'expect to destroy model' do
     destroy_step.call(ctx, model: user)
-    expect(ctx[:model]).to be nil
+    expect(ctx[:model].destroyed?).to be true
   end
 end
