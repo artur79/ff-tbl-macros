@@ -25,5 +25,5 @@ require_all File.dirname(__FILE__) + '/**/*.rb' # load gem' macros
 # load app specific macros
 if Dir.exists? 'lib/macros'
   require_all 'lib/macros/*.rb'
-  #require_all 'lib/macros/**/*.rb'
+  require_all 'lib/macros/**/*.rb'
 end
