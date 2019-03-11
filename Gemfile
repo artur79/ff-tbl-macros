@@ -11,6 +11,5 @@ group :development, :test do
   gem 'reform'
   gem 'require_all'
   gem 'trailblazer'
-  gem 'recursive-open-struct'
   gem 'warden'
 end

@@ -6,7 +6,6 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 %w[
   rubygems
   simplecov
-  recursive_open_struct
   reform
   warden
   rspec/active_model/mocks
