@@ -85,7 +85,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
   ff-tbl-macros!
   recursive-open-struct
   rspec

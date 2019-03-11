@@ -3,7 +3,7 @@ FROM ruby:2.6.1-alpine3.9
 LABEL maintainer="devops@firefield.com"
 
 RUN apk add --no-cache --update build-base linux-headers
-RUN apk add --no-cache --update build-essential git file
+RUN apk add --no-cache --update git file
 
 ENV APP_PATH /usr/src/app
 WORKDIR $APP_PATH
