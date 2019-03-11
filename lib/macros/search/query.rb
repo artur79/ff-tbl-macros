@@ -22,9 +22,10 @@ module Macros
         return false unless @searchable
 
         ctx[:searchable] = @searchable
-        query = @searchable.ransack params[:q]
-        ctx[:query] = query
-        temp_search_results = query.result
+        ransack_search_result = @searchable.ransack params[:q]
+        ctx[:query] = ransack_search_result
+
+        temp_search_results = ransack_search_result.result
         search_results = order ? temp_search_results.order(order) : temp_search_results
         ctx[:search_results] = search_results.page params[:page]
       end

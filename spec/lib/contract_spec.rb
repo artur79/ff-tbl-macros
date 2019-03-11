@@ -8,6 +8,7 @@ RSpec.describe Macros::Contract do
   end
 
   describe '#ExtractParams()' do
-    it { expect(described_class::ExtractParams()).to be_a described_class::ExtractParams }
+    let(:from) { :scope }
+    it { expect(described_class::ExtractParams(from: from)).to be_a described_class::ExtractParams }
   end
 end
