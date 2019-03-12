@@ -8,7 +8,7 @@ module Macros
     #   step Macros::Ctx::Inspect()
     #
     # @example prints the :model resource from the tbl context
-    #   step Macros::Ctx::Inspect(:model)
+    #   step Macros::Ctx::Inspect(key: :model)
     class Inspect < Macros::Base
       # @return [Macros::Debug::Ctx] step macro instance
       # @param key [Symbol or String] ctx key under which is a resource to which we want to assign, optional
