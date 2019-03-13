@@ -1,3 +1,11 @@
+PATH
+  remote: .
+  specs:
+    ff-tbl-macros (0.1.5)
+      activesupport
+      require_all
+      trailblazer
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -76,6 +84,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ff-tbl-macros!
   reform
   require_all
   rspec
