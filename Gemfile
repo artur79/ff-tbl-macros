@@ -2,9 +2,10 @@
 
 source 'https://rubygems.org'
 
-#gemspec
+gemspec
 
 group :development, :test do
+  gem 'recursive-open-struct'
   gem 'rspec'
   gem 'rspec-activemodel-mocks'
   gem 'simplecov'

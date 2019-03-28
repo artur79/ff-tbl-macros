@@ -5,22 +5,23 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'macros/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = 'ff-tbl-macros'
-  spec.version       = ::Macros::VERSION
-  spec.platform      = Gem::Platform::RUBY
-  spec.authors       = ['Artur Szwed, Claudio Perez Gamayo']
-  spec.email         = %w[devops@firefield.com]
-  spec.files         = ['lib/ff_tbl_macros.rb']
-  spec.homepage      = 'http://firefield.com'
-  spec.summary       = 'Trailblazer shared macros for Firefield apps'
-  spec.description   = 'Trailblazer shared macros for Firefield apps'
-  spec.license       = 'MIT'
+Gem::Specification.new do |s|
+  s.name          = 'ff-tbl-macros'
+  s.version       = ::Macros::VERSION
+  s.platform      = Gem::Platform::RUBY
+  s.authors       = ['Artur Szwed, Claudio Perez Gamayo']
+  s.email         = %w[devops@firefield.com]
+  s.files         = ['lib/ff_tbl_macros.rb']
+  s.homepage      = ''
+  s.summary       = 'Trailblazer shared macros'
+  s.description   = 'Trailblazer shared macros'
+  s.license       = 'MIT'
 
-  spec.add_dependency 'activesupport'
-  spec.add_dependency 'require_all'
-  spec.add_dependency 'trailblazer'
-
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
-  spec.require_paths = %w[lib]
+  s.add_dependency 'activesupport'
+  s.add_dependency 'require_all'
+  s.add_dependency 'trailblazer'
+  s.files         = Dir['lib/**/*.rb']
+  s.files        += Dir["[A-Z]*"] + Dir["spec/**/*"]
+  s.test_files    = s.files.grep(%r{^spec/})
+  s.require_paths = %w[lib]
 end
