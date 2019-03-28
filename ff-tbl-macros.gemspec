@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'activesupport'
   s.add_dependency 'require_all'
   s.add_dependency 'trailblazer'
-
-  s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
+  s.files         = Dir['lib/**/*.rb']
+  s.files        += Dir["[A-Z]*"] + Dir["spec/**/*"]
+  s.test_files    = s.files.grep(%r{^spec/})
   s.require_paths = %w[lib]
 end
