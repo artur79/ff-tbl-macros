@@ -8,6 +8,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
   simplecov
   reform
   warden
+  recursive-open-struct
   rspec/active_model/mocks
 ].each do |lib|
   require lib
