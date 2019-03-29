@@ -1,22 +1,84 @@
 # ff-tbl-macros
 
+![MIT-LICENSE](https://img.shields.io/github/license/firefield/ff-tbl-macros.svg?style=flat-square)
+
+Macros for Trailblazer operations.
+
+# Overview
+
+## Features
+
+- several predefined macros organized in namespaces
+- custom macros
+
+# Getting Started
+
+## Prerequisites
+
+For contributing, install docker to use the provided dockerized development environment.
+
 ## Installation
+
 Add this line to your application's Gemfile:
 
 ```ruby
 gem 'ff-tbl-macros', git: 'https://github.com/firefield/ff-tbl-macros.git'
 ```
 
-## Example Usage
+# Usage
+
+Use the macros in the operation steps:
+
 ```ruby
 class User::Delete < Trailblazer::Operation
   step Macros::Model::Destroy()
 end
 ```
 
+# Contributing
+
+1. Fork the Project
+1. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+1. Commit your Changes (git commit -m 'Add some AmazingFeature)
+1. Push to the Branch (git push origin feature/AmazingFeature)
+1. Open a Pull Request
+
+## Development
+
+The project includes a dockerized development environment. 
+
+```
+# build the docker containers
+docker-compose build
+
+# run the specs
+docker-compose run --rm app bundle exec rspec
+
+```
+
+# Documentation
+
+## Macros Types
+
+There are several types of macros organized in namespaces.
+
+### Auth Macros
+
+- `Macros::Auth::Authenticate`
+- `Macros::Auth::SignIn`
+- `Macros::Auth::SignOut`
+
+### Contract Macros
+### Context Macros
+### Current User Macros
+### Error Macros
+### Model Macros
+### Search Macros
+### Verify Params Macros
+
 ## Application Specific Macros
-Some macros are tighten to specific app functionality and should not be included in this gem.
-If you'd like to add some custom macros just put them in the _lib/macros_ folder of your Rails app following the example convention:
+
+You can create your own custom macros specific to your application. Just put them in the _lib/macros_ folder of your Rails app following this convention:
 
 _lib/macros/lorem.rb_
 ```ruby
@@ -49,13 +111,11 @@ module Macros
 end
 ```
 
-### Running Specs
-```
-bundle exec rspec
-```
+# License
 
-### Credits
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+# Aknowledgements
+
 Gem used https://github.com/coditsu/macros as the base.
 
-## License
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
