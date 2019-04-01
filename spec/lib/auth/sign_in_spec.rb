@@ -3,7 +3,7 @@
 RSpec.describe Macros::Auth::SignIn do
   include Warden::Test::Mock
 
-  subject(:sign_in_step) { described_class.new() }
+  subject(:sign_in_step) { described_class.new }
 
   let(:user) { mock_model('User') }
   let(:scope) { :user }

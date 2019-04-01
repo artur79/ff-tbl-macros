@@ -3,7 +3,7 @@
 RSpec.describe Macros::Auth::Authenticate do
   include Warden::Test::Mock
 
-  subject(:authenticate_step) { described_class.new() }
+  subject(:authenticate_step) { described_class.new }
 
   before do
     warden.set_user(user, scope: scope)
@@ -11,7 +11,7 @@ RSpec.describe Macros::Auth::Authenticate do
 
   let(:user) { mock_model('User') }
   let(:scope) { :user }
-  let(:ctx) { { } }
+  let(:ctx) { {} }
 
   it 'expects to authenticate' do
     authenticate_step.call(ctx, scope: scope, warden: warden)

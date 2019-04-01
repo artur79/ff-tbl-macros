@@ -21,8 +21,10 @@ module Macros
       def call(ctx, **)
         scope = ctx[@from]
         return false unless scope
+
         klass = scope.to_s.classify.constantize
         return false if @respond_to && !klass.new.respond_to?(@respond_to)
+
         ctx[:model] = klass.new
       end
     end

@@ -23,7 +23,7 @@ require File.dirname(__FILE__) + '/macros/base.rb' # Macros::Base must be loaded
 require_all File.dirname(__FILE__) + '/**/*.rb' # load gem' macros
 
 # load app specific macros
-if Dir.exists? 'lib/macros'
+if Dir.exist? 'lib/macros'
   require_all 'lib/macros/*.rb'
   require_all 'lib/macros/**/*.rb'
 end

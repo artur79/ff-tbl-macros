@@ -20,9 +20,8 @@ module Macros
       # Performs a step by signout the given user
       # @param ctx [Trailblazer::Skill] tbl context hash
       def call(ctx, warden:, **)
-        if @user_key
-          @user = ctx[@user_key]
-        end
+        @user = ctx[@user_key] if @user_key
+
         ctx[:scope] = scope(ctx)
         warden_user = warden.user(scope: ctx[:scope], run_callbacks: false)
         ctx[:model] = warden_user unless @user
@@ -32,15 +31,15 @@ module Macros
       end
 
       def scope(ctx)
-        if @user
-          resource_or_scope = @user
-        elsif ctx[:scope]
-          resource_or_scope = ctx[:scope]
-        elsif ctx[:model]
-          resource_or_scope = ctx[:model]
-        else
-          resource_or_scope = :user
-        end
+        resource_or_scope = if @user
+                              @user
+                            elsif ctx[:scope]
+                              ctx[:scope]
+                            elsif ctx[:model]
+                              ctx[:model]
+                            else
+                              :user
+                            end
 
         Devise::Mapping.find_scope!(resource_or_scope)
       end

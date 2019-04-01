@@ -3,7 +3,7 @@
 module Macros
   class Model
     class Copy < Macros::Base
-      def initialize(ctx_key=nil)
+      def initialize(ctx_key = nil)
         @ctx_key = ctx_key
       end
 

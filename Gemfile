@@ -6,11 +6,12 @@ gemspec
 
 group :development, :test do
   gem 'recursive-open-struct'
-  gem 'rspec'
-  gem 'rspec-activemodel-mocks'
-  gem 'simplecov'
   gem 'reform'
   gem 'require_all'
+  gem 'rspec'
+  gem 'rspec-activemodel-mocks'
+  gem 'rubocop'
+  gem 'simplecov'
   gem 'trailblazer'
   gem 'warden'
 end
