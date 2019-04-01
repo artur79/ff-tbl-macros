@@ -1,0 +1,10 @@
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - docker-compose build
+  
+script:
+  - docker-compose run --rm app bundle exec rspec
