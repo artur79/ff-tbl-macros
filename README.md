@@ -1,6 +1,6 @@
 # ff-tbl-macros
 
-![MIT-LICENSE](https://img.shields.io/github/license/firefield/ff-tbl-macros.svg?style=flat-square)
+![MIT-LICENSE](https://img.shields.io/github/license/firefield/ff-tbl-macros.svg?style=flat-square) ![build status](https://img.shields.io/travis/firefield/ff-tbl-macros.svg?style=flat-square)
 
 Macros for Trailblazer operations.
 
