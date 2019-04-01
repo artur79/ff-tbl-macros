@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 
 %w[
+  recursive-open-struct
+  reform
+  rspec/active_model/mocks
   rubygems
   simplecov
-  reform
   warden
-  recursive-open-struct
-  rspec/active_model/mocks
 ].each do |lib|
   require lib
 end
@@ -35,4 +35,4 @@ RSpec.configure do |config|
   end
 end
 
-require 'macros.rb'
+require 'ff_tbl_macros'
