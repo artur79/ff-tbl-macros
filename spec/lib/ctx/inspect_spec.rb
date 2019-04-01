@@ -6,7 +6,7 @@ RSpec.describe Macros::Ctx::Inspect do
   let(:key) { :foo }
   let(:value) { { lorem: :ipsum } }
 
-  let(:ctx) { { :foo => value, dolor: :se } }
+  let(:ctx) { { foo: value, dolor: :se } }
 
   it 'expects to print only specified pair key and value' do
     inspect_step.call(ctx)

@@ -5,7 +5,7 @@ RSpec.describe Macros::Contract::ExtractParams do
 
   let(:params) { { from: from } }
 
-  class self::UserForm < Reform::Form
+  class self::UserForm < Reform::Form # rubocop:disable Style/ClassAndModuleChildren
     property :password
 
     def build_errors; end

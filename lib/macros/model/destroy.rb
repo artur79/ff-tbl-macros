@@ -9,7 +9,7 @@ module Macros
       # Destroys a given model
       # @param _ctx [Trailblazer::Skill] context accumulator
       # @param model [Object] object that we want to destroy
-      def call(ctx, model:, **)
+      def call(_ctx, model:, **)
         model.destroy
         model.destroyed?
       end

@@ -2,7 +2,7 @@
 
 module Macros
   class CurrentUser
-    VALID_CURRENT_USER_CLASS_NAMES = %w(User Admin)
+    VALID_CURRENT_USER_CLASS_NAMES = %w[User Admin].freeze
 
     # Sets the current_user in the context.
     #

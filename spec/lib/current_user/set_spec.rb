@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Macros::CurrentUser::Set do
-  subject(:set_step) { described_class.new() }
+  subject(:set_step) { described_class.new }
 
   let(:user) { mock_model('User') }
   let(:ctx) { { model: user } }

@@ -6,13 +6,13 @@ module Macros
     #
     class Authenticate < Base
       # @return [Macro::Auth::SignIn] step macro instance
-      def initialize
-      end
+      def initialize; end
 
       # Performs a step by authenticating the the given user
       # @param ctx [Trailblazer::Skill] tbl context hash
       def call(ctx, scope:, warden:, **)
-        if user = warden.authenticate(scope: scope)
+        user = warden.authenticate(scope: scope)
+        if user
           ctx[:model] = user
           true
         else

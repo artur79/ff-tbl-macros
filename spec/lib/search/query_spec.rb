@@ -5,7 +5,7 @@ RSpec.describe Macros::Search::Query do
 
   let(:page) { 1 }
   let(:result) { double('result', page: page) }
-  let(:ransack_result) { OpenStruct.new({ q: query, result: result }) }
+  let(:ransack_result) { OpenStruct.new(q: query, result: result) }
   let(:klass) { mock_model('User', ransack: ransack_result) }
 
   let(:query) { { name_cont: 'foo' } }
