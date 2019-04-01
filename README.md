@@ -45,7 +45,7 @@ end
 
 ## Development
 
-The project includes a dockerized development environment. 
+The project includes a dockerized development environment.
 
 ```
 # build the docker containers
@@ -69,12 +69,38 @@ There are several types of macros organized in namespaces.
 - `Macros::Auth::SignOut`
 
 ### Contract Macros
+
+- `Macros::Contract::ExtractParams`
+- `Macros::Contract::Prepopulate`
+
 ### Context Macros
+
+- `Macros::Ctx::Copy`
+- `Macros::Ctx::Inspect`
+- `Macros::Ctx::ValidatePresence`
+
 ### Current User Macros
+
+- `Macros::CurrentUser::Set`
+
 ### Error Macros
+
+- `Macros::Error::SetFromContract`
+
 ### Model Macros
+
+- `Macros::Model::Build`
+- `Macros::Model::Copy`
+- `Macros::Model::Destroy`
+- `Macros::Model::Persist`
+
 ### Search Macros
+
+- `Macros::Search::Query`
+
 ### Verify Params Macros
+
+- `Macros::VeriryParams::Date`
 
 ## Application Specific Macros
 
