@@ -35,4 +35,4 @@ RSpec.configure do |config|
   end
 end
 
-require 'ff_tbl_macros'
+require 'ff-tbl-macros'
