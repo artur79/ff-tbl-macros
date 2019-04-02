@@ -35,4 +35,4 @@ RSpec.configure do |config|
   end
 end
 
-require 'macros.rb'
+require 'macros'
