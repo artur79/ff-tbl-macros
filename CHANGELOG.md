@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update documentation
 - Add missing documentation
 
+### Changed
+- Use rubygems version insted GitHub one
+
 ### Added
 - Add Travis setup
 
