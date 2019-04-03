@@ -30,7 +30,7 @@ Be sure you have followed the code style for the project.
 
 # How to report a bug
 
-If you find a security vulnerability, do NOT open an issue. Email devops@firefield.com instead.
+If you find a security vulnerability, do NOT open an issue. Email security@firefield.com instead.
 
 When filing an issue, make sure to answer these questions:
 
