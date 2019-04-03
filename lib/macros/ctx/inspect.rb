@@ -18,9 +18,9 @@ module Macros
 
       def call(ctx, **)
         if @key
-          p ctx[@key]
+          p ctx[@key] # rubocop:disable Rails/Output
         else
-          p ctx
+          p ctx # rubocop:disable Rails/Output
         end
       end
     end

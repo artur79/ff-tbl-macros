@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ff-tbl-macros (0.1.8)
+    ff-tbl-macros (1.0.0)
       activesupport (~> 5.2)
       require_all (~> 2.0)
       trailblazer (~> 2.0)

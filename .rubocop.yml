@@ -15,3 +15,7 @@ Style/DoubleNegation:
 
 Documentation:
   Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - 'lib/ff-tbl-macros.rb'
