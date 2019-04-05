@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-04-05
+### Changed
+- Fix gem's dependencies in gemspec
+- Related gem's updates
+
 ## [1.0.0] - 2019-04-03
 ### Changed
 - Update version to 1.0.0
