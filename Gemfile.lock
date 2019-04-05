@@ -1,23 +1,23 @@
 PATH
   remote: .
   specs:
-    ff-tbl-macros (1.0.0)
-      activesupport (~> 5.2)
+    ff-tbl-macros (1.0.1)
+      activesupport (> 5.2)
       require_all (~> 2.0)
-      trailblazer (~> 2.0)
+      trailblazer (> 2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (5.2.2)
-      activesupport (= 5.2.2)
-    activesupport (5.2.2)
+    activemodel (5.2.3)
+      activesupport (= 5.2.3)
+    activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ast (2.4.0)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     declarative (0.0.10)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
@@ -40,7 +40,7 @@ GEM
       ast (~> 2.4.0)
     pipetree (0.1.1)
     psych (3.1.0)
-    rack (2.0.6)
+    rack (2.0.7)
     rainbow (3.0.0)
     recursive-open-struct (1.1.0)
     reform (2.2.4)
@@ -68,7 +68,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rubocop (0.66.0)
+    rubocop (0.67.2)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5, != 2.5.1.1)
