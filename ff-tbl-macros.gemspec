@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
   s.description   = 'Collection of useful macros for Trailblazer to operate on context, contracts, params etc.'
   s.license       = 'MIT'
 
-  s.add_dependency 'activesupport', '> 5.2'
+  s.add_dependency 'activesupport', '>= 5.2'
   s.add_dependency 'require_all', '~> 2.0'
-  s.add_dependency 'trailblazer', '> 2.0'
+  s.add_dependency 'trailblazer', '>= 2.0'
 
   s.files         = ['lib/ff-tbl-macros.rb']
   s.files        += Dir['lib/**/*.rb']
