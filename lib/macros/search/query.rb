@@ -9,7 +9,7 @@ module Macros
 
       # @return [Macros::Search::Results] step macro instance
       #
-      # @example searchable is optional, paginate is default true
+      # @example searchable is optional, paginate is true by default
       #   Macros::Search::Query(searchable: Admin)
       def initialize(searchable:, paginate: true)
         @searchable = searchable
