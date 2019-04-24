@@ -1,14 +1,19 @@
 # frozen_string_literal: true
 
+require 'pagy'
+
 module Macros
   class Search
     class Query < Macros::Base
+      include Pagy::Backend
+
       # @return [Macros::Search::Results] step macro instance
       #
-      # @example searchable is optional
+      # @example searchable is optional, paginate is default true
       #   Macros::Search::Query(searchable: Admin)
-      def initialize(searchable:)
+      def initialize(searchable:, paginate: true)
         @searchable = searchable
+        @paginate = paginate
       end
 
       # @param ctx [Trailblazer::Skill] tbl context hash
@@ -22,12 +27,20 @@ module Macros
         return false unless @searchable
 
         ctx[:searchable] = @searchable
-        ransack_search_result = @searchable.ransack params[:q]
-        ctx[:query] = ransack_search_result
 
-        temp_search_results = ransack_search_result.result
-        search_results = order ? temp_search_results.order(order) : temp_search_results
-        ctx[:search_results] = search_results.page params[:page]
+        ransack_search = @searchable.ransack params[:q]
+        ctx[:query] = ransack_search
+
+        temp_search_results = ransack_search.result
+
+        if @paginate
+          page = params[:page] || 1
+          pagy, records = pagy(temp_search_results, page: page)
+          ctx[:pages] = pagy
+          temp_search_results = records
+        end
+
+        ctx[:search_results] = order ? temp_search_results.order(order) : temp_search_results
       end
     end
   end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ff-tbl-macros (1.0.1)
+    ff-tbl-macros (2.0.0)
       activesupport (>= 5.2)
       require_all (~> 2.0)
       trailblazer (>= 2.0)
@@ -35,8 +35,9 @@ GEM
     jaro_winkler (1.5.2)
     json (2.2.0)
     minitest (5.11.3)
+    pagy (2.1.5)
     parallel (1.17.0)
-    parser (2.6.2.0)
+    parser (2.6.2.1)
       ast (~> 2.4.0)
     pipetree (0.1.1)
     psych (3.1.0)
@@ -61,7 +62,7 @@ GEM
       rspec-mocks (>= 2.99, < 4.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
-    rspec-expectations (3.8.2)
+    rspec-expectations (3.8.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-mocks (3.8.0)
@@ -103,6 +104,7 @@ PLATFORMS
 
 DEPENDENCIES
   ff-tbl-macros!
+  pagy
   recursive-open-struct
   reform
   require_all
