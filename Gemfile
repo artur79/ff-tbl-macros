@@ -12,6 +12,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-activemodel-mocks'
   gem 'rubocop'
+  gem 'rubocop-performance'
   gem 'simplecov'
   gem 'trailblazer'
   gem 'warden'

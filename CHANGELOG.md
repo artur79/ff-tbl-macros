@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- add gem [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) to satisfy future Rubocop deprecations.
 
 ## [2.0.0] - 2019-04-24
 ### Changed
