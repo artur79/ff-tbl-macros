@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
+require 'pagy' if Gem.loaded_specs.has_key?('pagy')
+
 module Macros
   class Search
     class Query < Macros::Base
-      include Pagy::Backend if const_defined?('Pagy')
+      include Pagy::Backend if Gem.loaded_specs.has_key?('pagy')
 
       # @return [Macros::Search::Results] step macro instance
       #
