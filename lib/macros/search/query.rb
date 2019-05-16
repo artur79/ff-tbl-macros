@@ -3,7 +3,7 @@
 module Macros
   class Search
     class Query < Macros::Base
-      include Pagy::Backend
+      include Pagy::Backend if const_defined?('Pagy')
 
       # @return [Macros::Search::Results] step macro instance
       #
