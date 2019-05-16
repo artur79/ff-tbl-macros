@@ -5,7 +5,7 @@
 - Add gem [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) to satisfy future Rubocop deprecations.
 
 ### Fixed
-- Move require pagy gem from top level down to the Macros::Search::Query class definition
+- Remove require pagy gem from macro class
 
 ## [2.0.0] - 2019-04-24
 ### Changed

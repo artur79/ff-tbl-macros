@@ -10,6 +10,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
   rubygems
   simplecov
   warden
+  pagy
 ].each do |lib|
   require lib
 end
