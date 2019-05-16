@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'pagy'
-
 module Macros
   class Search
     class Query < Macros::Base
+      require 'pagy'
+
       include Pagy::Backend
 
       # @return [Macros::Search::Results] step macro instance
