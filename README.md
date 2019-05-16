@@ -35,6 +35,8 @@ class User::Delete < Trailblazer::Operation
 end
 ```
 
+*Warning! Rarely some macros may require some gem(s) to be included. Find respective macro down in this file in Macros Types section.*
+
 # Contributing
 
 Use the provided dockerized development environment. For more information check the [CONTRIBUTING](CONTRIBUTING.md) file.
@@ -93,6 +95,8 @@ There are several types of macros organized in namespaces.
 ### Search Macros
 
 - `Macros::Search::Query`
+
+*Warning ! If you want to use Macros::Search::Query you have to include [pagy](https://github.com/ddnexus/pagy) gem into ypur Gemfile*
 
 ### Verify Params Macros
 
