@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## [2.0.2] - 2019-06-20
 ### Added
 - Add gem [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) to satisfy future Rubocop deprecations.
 - Add new Auth Macros, SignOutAllScopes and ExpireSessionData
@@ -33,7 +35,7 @@
 - Add missing documentation
 
 ### Changed
-- Use rubygems version insted GitHub one
+- Use rubygems version instead GitHub one
 
 ### Added
 - Add Travis setup
