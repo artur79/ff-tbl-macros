@@ -2,7 +2,8 @@
 
 ## [Unreleased]
 ### Added
-- add gem [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) to satisfy future Rubocop deprecations.
+- Add gem [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) to satisfy future Rubocop deprecations.
+- Add new Auth Macros, SignOutAllScopes and ExpireSessionData
 
 ## [2.0.1] - 2019-05-16
 ### Fixed

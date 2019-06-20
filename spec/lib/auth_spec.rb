@@ -12,4 +12,12 @@ RSpec.describe Macros::Auth do
   describe '#SignOut()' do
     it { expect(described_class::SignOut()).to be_a described_class::SignOut }
   end
+
+  describe '#SignOutAllScopes()' do
+    it { expect(described_class::SignOutAllScopes()).to be_a described_class::SignOutAllScopes }
+  end
+
+  describe '#ExpireSessionData()' do
+    it { expect(described_class::ExpireSessionData()).to be_a described_class::ExpireSessionData }
+  end
 end

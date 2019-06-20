@@ -65,6 +65,8 @@ There are several types of macros organized in namespaces.
 - `Macros::Auth::Authenticate`
 - `Macros::Auth::SignIn`
 - `Macros::Auth::SignOut`
+- `Macros::Auth::SignOutAllScopes`
+- `Macros::Auth::ExpireSessionData`
 
 ### Contract Macros
 
