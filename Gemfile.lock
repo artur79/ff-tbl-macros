@@ -41,7 +41,7 @@ GEM
       ast (~> 2.4.0)
     pipetree (0.1.1)
     psych (3.1.0)
-    rack (2.0.7)
+    rack (2.0.8)
     rainbow (3.0.0)
     recursive-open-struct (1.1.0)
     reform (2.2.4)
